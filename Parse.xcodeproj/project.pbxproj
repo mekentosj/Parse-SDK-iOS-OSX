@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7EC0AE1C3AC31500FECF28 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B509FD1BDA9E8200C60BE9 /* Bolts.framework */; };
 		53B50A0E1BDA9EA100C60BE9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B509FD1BDA9E8200C60BE9 /* Bolts.framework */; };
 		7CBC8DA116D594F800AEC66D /* PFTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF213BB16D41D980065CF1A /* PFTaskQueue.m */; };
 		8101550A1BB3832700D7C7BD /* PFWeakValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1EE481AE1EF960031C438 /* PFWeakValue.m */; };
@@ -656,7 +657,6 @@
 		815619021A1F79AC0076504A /* PFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 815618FF1A1F79AC0076504A /* PFDateFormatter.m */; };
 		815619031A1F79AC0076504A /* PFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 815618FF1A1F79AC0076504A /* PFDateFormatter.m */; };
 		815868E21AF9818D009A5751 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8103FA44198FC267000BAE3F /* Bolts.framework */; };
-		815868E71AF98731009A5751 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8103FA44198FC267000BAE3F /* Bolts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		815960A11ABCA3B30069EBCC /* PFFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159609F1ABCA3B30069EBCC /* PFFileManager.h */; };
 		815960A21ABCA3B30069EBCC /* PFFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159609F1ABCA3B30069EBCC /* PFFileManager.h */; };
 		815960A31ABCA3B30069EBCC /* PFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 815960A01ABCA3B30069EBCC /* PFFileManager.m */; };
@@ -1235,6 +1235,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D7EC0A11C3AC2E300FECF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53B509F11BDA9E8200C60BE9 /* Bolts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EDDA62817E17DDC00655F8A;
+			remoteInfo = MacBolts;
+		};
 		53B509FC1BDA9E8200C60BE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 53B509F11BDA9E8200C60BE9 /* Bolts.xcodeproj */;
@@ -1318,13 +1325,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 81C3821B19CCA89E0066284A;
 			remoteInfo = "Parse-iOS";
-		};
-		81493A991A0D3CE3008D5504 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09D33641139C54930098E916 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 81493A931A0D3492008D5504;
-			remoteInfo = BoltsSDK;
 		};
 		81AB68B61B7E7ECC0053210E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1982,7 +1982,7 @@
 				97DE045C163214C0007154E8 /* SystemConfiguration.framework in Frameworks */,
 				97DE045A16321492007154E8 /* Security.framework in Frameworks */,
 				97DE045116321428007154E8 /* CoreLocation.framework in Frameworks */,
-				815868E71AF98731009A5751 /* Bolts.framework in Frameworks */,
+				4D7EC0AE1C3AC31500FECF28 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4223,7 +4223,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				81493A9A1A0D3CE3008D5504 /* PBXTargetDependency */,
+				4D7EC0A21C3AC2E300FECF28 /* PBXTargetDependency */,
 			);
 			name = "Parse-OSX";
 			productName = ParseMac;
@@ -5142,6 +5142,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D7EC0A21C3AC2E300FECF28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MacBolts;
+			targetProxy = 4D7EC0A11C3AC2E300FECF28 /* PBXContainerItemProxy */;
+		};
 		53B50A0D1BDA9E8B00C60BE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Bolts;
@@ -5161,11 +5166,6 @@
 			isa = PBXTargetDependency;
 			target = 81C3821B19CCA89E0066284A /* Parse-iOS */;
 			targetProxy = 8111674B1B8402DF003CB026 /* PBXContainerItemProxy */;
-		};
-		81493A9A1A0D3CE3008D5504 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 81493A931A0D3492008D5504 /* BoltsSDK-OSX */;
-			targetProxy = 81493A991A0D3CE3008D5504 /* PBXContainerItemProxy */;
 		};
 		81AB68C81B7E7F2A0053210E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
